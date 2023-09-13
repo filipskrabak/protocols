@@ -1,0 +1,11 @@
+UDP-Packet DEFINITIONS ::= BEGIN
+
+UDP-Packet ::= SEQUENCE {
+    source-port     INTEGER (0..65535),
+    destination-port INTEGER (0..65535),
+    length          INTEGER (8..65535),
+    checksum        INTEGER (0..65535),
+    data            OCTET STRING (SIZE(0..65535)) -- ???
+}
+
+END
