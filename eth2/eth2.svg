@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:pv="http://www.packetvisualizer.com" pv:schemaLocation="urn:pvschema ../pvschema.xsd" height="285" width="10030">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:pv="http://www.packetvisualizer.com" pv:schemaLocation="urn:pvschema ../pvschema.xsd" height="1285" width="10030">
     <!--Classes -->
     <style>
         <![CDATA[
@@ -22,14 +22,14 @@
     <g transform="translate(0,0)">
         <g transform="translate(0, 0)">
             <metadata>
-                <pv:packetinfo pv:length="48" pv:display_name="Destination MAC" pv:internal_name="dst_mac" rel="dst_mac"></pv:packetinfo>
+                <pv:packetinfo pv:length="48" pv:display_name="Destination MAC" pv:internal_name="dst_mac"></pv:packetinfo>
             </metadata>
-            <rect class="field" width="384" height="40" id="dst_mac"/>
+            <rect class="field" width="384" height="40"/>
             <svg width="384" height="40">
                 <text x="50%" y="50%" class="fieldText">Destination MAC</text>
             </svg>
         </g>
-        <g transform="translate(384, 0)">
+        <g transform="translate(0, 40)">
             <metadata>
                 <pv:packetinfo pv:length="48" pv:display_name="Source MAC" pv:internal_name="src_mac"></pv:packetinfo>
             </metadata>
@@ -38,7 +38,7 @@
                 <text x="50%" y="50%" class="fieldText">Source MAC</text>
             </svg>
         </g>
-        <g transform="translate(768, 0)">
+        <g transform="translate(0, 80)">
             <metadata>
                 <pv:packetinfo pv:length="16" pv:display_name="EtherType" pv:internal_name="ethertype">
                     <pv:subtype>
@@ -55,21 +55,65 @@
                     </pv:subtype>
                 </pv:packetinfo>
             </metadata>
-            <rect class="field" width="192" height="40"/>
-            <svg width="192" height="40">
+            <rect class="field" width="128" height="40"/>
+            <svg width="128" height="40">
                 <text x="50%" y="50%" class="fieldText">EtherType</text>
             </svg>
         </g>
-        <g transform="translate(960, 0)">
+        <g transform="translate(0, 80)">
             <metadata>
                 <pv:packetinfo pv:length="368" pv:length_max="12000" pv:display_name="Data" pv:internal_name="data" pv:encapsulate="true"></pv:packetinfo>
             </metadata>
-            <rect class="field" width="2944" height="40"/>
-            <svg width="2944" height="40">
-                <text x="50%" y="50%" class="fieldText">Data</text>
-            </svg>
+            <g transform="translate(128, 0)">
+                <rect class="field" width="256" height="40"/>
+                <svg width="256" height="40">
+                    <text x="50%" y="50%" class="fieldText">Data</text>
+                </svg>
+            </g>
+            <g transform="translate(0, 40)">
+                <rect class="field" width="384" height="40"/>
+                <svg width="384" height="40">
+                    <text x="50%" y="50%" class="fieldText">Data</text>
+                </svg>
+            </g>
+            <g transform="translate(0, 80)">
+                <rect class="field" width="384" height="40"/>
+                <svg width="384" height="40">
+                    <text x="50%" y="50%" class="fieldText">Data</text>
+                </svg>
+            </g>
+            <g transform="translate(0, 120)">
+                <rect class="field" width="384" height="40"/>
+                <svg width="384" height="40">
+                    <text x="50%" y="50%" class="fieldText">Data</text>
+                </svg>
+            </g>
+            <g transform="translate(0, 160)">
+                <rect class="field" width="384" height="40"/>
+                <svg width="384" height="40">
+                    <text x="50%" y="50%" class="fieldText">Data</text>
+                </svg>
+            </g>
+            <g transform="translate(0, 200)">
+                <rect class="field" width="384" height="40"/>
+                <svg width="384" height="40">
+                    <text x="50%" y="50%" class="fieldText">Data</text>
+                </svg>
+            </g>
+            <g transform="translate(0, 240)">
+                <rect class="field" width="384" height="40"/>
+                <svg width="384" height="40">
+                    <text x="50%" y="50%" class="fieldText">Data</text>
+                </svg>
+            </g>
+            <g transform="translate(0, 280)">
+                <rect class="field" width="384" height="40"/>
+                <svg width="384" height="40">
+                    <text x="50%" y="50%" class="fieldText">Data</text>
+                </svg>
+            </g>
         </g>
-        <g transform="translate(3904, 0)">
+        <g transform="translate(0, 400)">
             <metadata>
                 <pv:packetinfo pv:length="32" pv:display_name="FCS" pv:internal_name="fcs"></pv:packetinfo>
             </metadata>
