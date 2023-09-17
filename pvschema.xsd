@@ -25,7 +25,7 @@
       <xs:element ref="tns:name"/>
     </xs:sequence>
 
-    <xs:attribute ref="tns:selected" use="required"/>
+    <xs:attribute ref="tns:selected"/>
   </xs:complexType>
 </xs:element>
 

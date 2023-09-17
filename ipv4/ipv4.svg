@@ -1,0 +1,196 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:pv="http://www.packetvisualizer.com" pv:schemaLocation="urn:pvschema ../pvschema.xsd" height="285" width="1030">
+    <!--Classes -->
+    <style>
+        <![CDATA[
+            rect.field {
+                fill:rgb(255,255,255);
+                stroke-width:2;
+                stroke:rgb(0,0,0);
+            }
+            text.fieldText {
+                font-family: Verdana;
+                font-size: 14px;
+                fill: black;
+                text-anchor: middle;
+                dominant-baseline: middle;
+            }
+        ]]>
+    </style>
+    
+    <!-- 1b = 32px -->
+    <!-- First Row -->
+    <g transform="translate(0,0)">
+        <g transform="translate(0, 0)">
+            <metadata>
+                <pv:packetinfo pv:length="4" pv:display_name="Version" pv:internal_name="version"></pv:packetinfo>
+            </metadata>
+            <rect class="field" width="128" height="40"/>
+            <svg width="128" height="40">
+                <text x="50%" y="50%" class="fieldText">Version</text>
+            </svg>
+        </g>
+        <g transform="translate(128, 0)">
+            <metadata>
+                <pv:packetinfo pv:length="4" pv:display_name="IHL" pv:internal_name="ihl"></pv:packetinfo>
+            </metadata>
+            <rect class="field" width="128" height="40"/>
+            <svg width="128" height="40">
+                <text x="50%" y="50%" class="fieldText">IHL</text>
+            </svg>
+        </g>
+        <g transform="translate(256, 0)">
+            <metadata>
+                <pv:packetinfo pv:length="8" pv:display_name="Type of Service" pv:internal_name="type_of_service"></pv:packetinfo>
+            </metadata>
+            <rect class="field" width="256" height="40"/>
+            <svg width="256" height="40">
+                <text x="50%" y="50%" class="fieldText">Type of Service</text>
+            </svg>
+        </g>
+        <g transform="translate(512, 0)">
+            <metadata>
+                <pv:packetinfo pv:length="16" pv:display_name="Total Length" pv:internal_name="total_length"></pv:packetinfo>
+            </metadata>
+            <rect class="field" width="512" height="40"/>
+            <svg width="512" height="40">
+                <text x="50%" y="50%" class="fieldText">Total Length</text>
+            </svg>
+        </g>
+    </g>
+    <!-- Second Row -->
+    <g transform="translate(0,40)">
+        <g transform="translate(0, 0)">
+            <metadata>
+                <pv:packetinfo pv:length="16" pv:display_name="Identification" pv:internal_name="identification"></pv:packetinfo>
+            </metadata>
+            <rect class="field" width="512" height="40"/>
+            <svg width="512" height="40">
+                <text x="50%" y="50%" class="fieldText">Identification</text>
+            </svg>
+        </g>
+        <g transform="translate(512, 0)">
+            <metadata>
+                <pv:packetinfo pv:length="1" pv:display_name="RES" pv:internal_name="flag_res"></pv:packetinfo>
+            </metadata>
+            <rect class="field" width="32" height="40"/>
+            <svg width="32" height="40">
+                <text x="50%" y="50%" class="fieldText">RES</text>
+            </svg>
+        </g>
+        <g transform="translate(544, 0)">
+            <metadata>
+                <pv:packetinfo pv:length="1" pv:display_name="DF" pv:internal_name="flag_df"></pv:packetinfo>
+            </metadata>
+            <rect class="field" width="32" height="40"/>
+            <svg width="32" height="40">
+                <text x="50%" y="50%" class="fieldText">DF</text>
+            </svg>
+        </g>
+        <g transform="translate(576, 0)">
+            <metadata>
+                <pv:packetinfo pv:length="1" pv:display_name="MF" pv:internal_name="flag_mf"></pv:packetinfo>
+            </metadata>
+            <rect class="field" width="32" height="40"/>
+            <svg width="32" height="40">
+                <text x="50%" y="50%" class="fieldText">MF</text>
+            </svg>
+        </g>
+        <g transform="translate(608, 0)">
+            <metadata>
+                <pv:packetinfo pv:length="13" pv:display_name="Fragment Offset" pv:internal_name="fragment_offset"></pv:packetinfo>
+            </metadata>
+            <rect class="field" width="416" height="40"/>
+            <svg width="416" height="40">
+                <text x="50%" y="50%" class="fieldText">Fragment Offset</text>
+            </svg>
+        </g>
+    </g>
+    <!-- Third Row -->
+    <g transform="translate(0,80)">
+        <g transform="translate(0, 0)">
+            <metadata>
+                <pv:packetinfo pv:length="8" pv:display_name="Time to Live" pv:internal_name="time_to_live"></pv:packetinfo>
+            </metadata>
+            <rect class="field" width="256" height="40"/>
+            <svg width="256" height="40">
+                <text x="50%" y="50%" class="fieldText">Time to Live</text>
+            </svg>
+        </g>
+        <g transform="translate(256, 0)">
+            <metadata>
+                <pv:packetinfo pv:length="8" pv:display_name="Protocol" pv:internal_name="protocol"></pv:packetinfo>
+            </metadata>
+            <rect class="field" width="256" height="40"/>
+            <svg width="256" height="40">
+                <text x="50%" y="50%" class="fieldText">Protocol</text>
+            </svg>
+        </g>
+        <g transform="translate(512, 0)">
+            <metadata>
+                <pv:packetinfo pv:length="16" pv:display_name="Header Checksum" pv:internal_name="header_checksum"></pv:packetinfo>
+            </metadata>
+            <rect class="field" width="512" height="40"/>
+            <svg width="512" height="40">
+                <text x="50%" y="50%" class="fieldText">Header Checksum</text>
+            </svg>
+        </g>
+    </g>
+    <!-- Fourth Row -->
+    <g transform="translate(0,120)">
+        <g transform="translate(0, 0)">
+            <metadata>
+                <pv:packetinfo pv:length="32" pv:display_name="Source IP" pv:internal_name="source_ip"></pv:packetinfo>
+            </metadata>
+            <rect class="field" width="1024" height="40"/>
+            <svg width="1024" height="40">
+                <text x="50%" y="50%" class="fieldText">Source IP</text>
+            </svg>
+        </g>
+    </g>
+    <!-- Fifth Row -->
+    <g transform="translate(0,160)">
+        <g transform="translate(0, 0)">
+            <metadata>
+                <pv:packetinfo pv:length="32" pv:display_name="Destination IP" pv:internal_name="destination_ip"></pv:packetinfo>
+            </metadata>
+            <rect class="field" width="1024" height="40"/>
+            <svg width="1024" height="40">
+                <text x="50%" y="50%" class="fieldText">Destination IP</text>
+            </svg>
+        </g>
+    </g>
+    <!-- Sixth Row -->
+    <g transform="translate(0,200)">
+        <g transform="translate(0, 0)">
+            <metadata>
+                <pv:packetinfo pv:length="0" pv:max_length="320" pv:display_name="Options" pv:internal_name="options"></pv:packetinfo>
+            </metadata>
+            <rect class="field" width="768" height="40"/>
+            <svg width="768" height="40">
+                <text x="50%" y="50%" class="fieldText">Options...</text>
+            </svg>
+        </g>
+        <g transform="translate(768, 0)">
+            <metadata>
+                <pv:packetinfo pv:length="0" pv:max_length="32" pv:display_name="Padding" pv:internal_name="padding"></pv:packetinfo>
+            </metadata>
+            <rect class="field" width="256" height="40"/>
+            <svg width="256" height="40">
+                <text x="50%" y="50%" class="fieldText">Padding...</text>
+            </svg>
+        </g>   
+    </g>
+    <!-- Seventh Row -->
+    <g transform="translate(0,240)">
+        <g transform="translate(0, 0)">
+            <metadata>
+                <pv:packetinfo pv:length="160" pv:max_length="524288" pv:display_name="Data" pv:internal_name="data"></pv:packetinfo>
+            </metadata>
+            <rect class="field" width="1024" height="40"/>
+            <svg width="1024" height="40">
+                <text x="50%" y="50%" class="fieldText">Data...</text>
+            </svg>
+        </g>
+    </g>
+</svg> 
+ 
