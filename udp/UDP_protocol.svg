@@ -1,0 +1,74 @@
+ <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:pv="http://www.packetvisualizer.com" pv:schemaLocation="urn:pvschema ../pvschema.xsd" height="1285" width="10030">
+    <!--Classes -->
+    <style>
+        <![CDATA[
+            rect.field {
+                fill:rgb(255,255,255);
+                stroke-width:2;
+                stroke:rgb(0,0,0);
+            }
+            text.fieldText {
+                font-family: Verdana;
+                font-size: 14px;
+                fill: black;
+                text-anchor: middle;
+                dominant-baseline: middle;
+            }
+        ]]>
+    </style>
+    
+    <!-- 1b = 32px -->
+    <!-- First Row -->
+    <g transform="translate(0,0)">
+        <!-- UDP -->
+        <g transform="translate(0, 0)">
+            <g transform="translate(0, 0)">
+                <metadata>
+                    <pv:packetinfo pv:length="16" pv:display_name="Source Port" pv:internal_name="source_port"></pv:packetinfo>
+                </metadata>
+                <rect class="field" width="512" height="40"/>
+                <svg width="512" height="40">
+                    <text x="50%" y="50%" class="fieldText">Source Port</text>
+                </svg>
+            </g>
+            <g transform="translate(512, 0)">
+                <metadata>
+                    <pv:packetinfo pv:length="16" pv:display_name="Destination Port" pv:internal_name="destination_port"></pv:packetinfo>
+                </metadata>
+                <rect class="field" width="512" height="40"/>
+                <svg width="512" height="40">
+                    <text x="50%" y="50%" class="fieldText">Destination Port</text>
+                </svg>
+            </g>
+        </g>
+        <g transform="translate(0, 40)">
+            <g transform="translate(0, 0)">
+                <metadata>
+                    <pv:packetinfo pv:length="16" pv:display_name="Length" pv:internal_name="length"></pv:packetinfo>
+                </metadata>
+                <rect class="field" width="512" height="40"/>
+                <svg width="512" height="40">
+                    <text x="50%" y="50%" class="fieldText">Length</text>
+                </svg>
+            </g>
+            <g transform="translate(512, 0)">
+                <metadata>
+                    <pv:packetinfo pv:length="16" pv:display_name="Checksum" pv:internal_name="checksum"></pv:packetinfo>
+                </metadata>
+                <rect class="field" width="512" height="40"/>
+                <svg width="512" height="40">
+                    <text x="50%" y="50%" class="fieldText">Checksum</text>
+                </svg>
+            </g>
+        </g>
+        <g transform="translate(0, 80)">
+            <metadata>
+                <pv:packetinfo pv:length="0" pv:display_name="Data" pv:internal_name="data" encapsulate="true"></pv:packetinfo>
+            </metadata>
+            <rect class="field" width="1024" height="40"/>
+            <svg width="1024" height="40">
+                <text x="50%" y="50%" class="fieldText">Data ...</text>
+            </svg>
+        </g>
+    </g>
+</svg> 
