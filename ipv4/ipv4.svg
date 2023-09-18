@@ -109,7 +109,7 @@
     <g transform="translate(0,80)">
         <g transform="translate(0, 0)">
             <metadata>
-                <pv:packetinfo pv:length="8" pv:display_name="Time to Live" pv:internal_name="time_to_live"></pv:packetinfo>
+                <pv:packetinfo pv:length="8" pv:display_name="Time to Live" pv:internal_name="ttl"></pv:packetinfo>
             </metadata>
             <rect class="field" width="256" height="40"/>
             <svg width="256" height="40">
@@ -139,7 +139,7 @@
     <g transform="translate(0,120)">
         <g transform="translate(0, 0)">
             <metadata>
-                <pv:packetinfo pv:length="32" pv:display_name="Source IP" pv:internal_name="source_ip"></pv:packetinfo>
+                <pv:packetinfo pv:length="32" pv:display_name="Source IP" pv:internal_name="src_ip"></pv:packetinfo>
             </metadata>
             <rect class="field" width="1024" height="40"/>
             <svg width="1024" height="40">
@@ -151,7 +151,7 @@
     <g transform="translate(0,160)">
         <g transform="translate(0, 0)">
             <metadata>
-                <pv:packetinfo pv:length="32" pv:display_name="Destination IP" pv:internal_name="destination_ip"></pv:packetinfo>
+                <pv:packetinfo pv:length="32" pv:display_name="Destination IP" pv:internal_name="dst_ip"></pv:packetinfo>
             </metadata>
             <rect class="field" width="1024" height="40"/>
             <svg width="1024" height="40">
@@ -167,7 +167,7 @@
             </metadata>
             <rect class="field" width="768" height="40"/>
             <svg width="768" height="40">
-                <text x="50%" y="50%" class="fieldText">Options...</text>
+                <text x="50%" y="50%" class="fieldText">Options ...</text>
             </svg>
         </g>
         <g transform="translate(768, 0)">
@@ -176,7 +176,7 @@
             </metadata>
             <rect class="field" width="256" height="40"/>
             <svg width="256" height="40">
-                <text x="50%" y="50%" class="fieldText">Padding...</text>
+                <text x="50%" y="50%" class="fieldText">Padding ...</text>
             </svg>
         </g>   
     </g>
@@ -188,7 +188,7 @@
             </metadata>
             <rect class="field" width="1024" height="40"/>
             <svg width="1024" height="40">
-                <text x="50%" y="50%" class="fieldText">Data...</text>
+                <text x="50%" y="50%" class="fieldText">Data ...</text>
             </svg>
         </g>
     </g>

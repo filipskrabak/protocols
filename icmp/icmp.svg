@@ -134,7 +134,7 @@
     <g transform="translate(0,40)">
         <g transform="translate(0, 0)">
             <metadata>
-                <pv:packetinfo pv:length="0" pv:display_name="... the rest of the header ..." pv:internal_name="rest_of_the_header"></pv:packetinfo>
+                <pv:packetinfo pv:length="0" pv:display_name="... the rest of the header ..." pv:internal_name="rest_of_the_header" encapsulate="true"></pv:packetinfo>
             </metadata>
             <rect class="field" width="1024" height="40"/>
             <svg width="1024" height="40">

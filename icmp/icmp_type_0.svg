@@ -119,11 +119,11 @@
     <g transform="translate(0,80)">
         <g transform="translate(0, 0)">
             <metadata>
-                <pv:packetinfo pv:length="16" pv:display_name="Data" pv:internal_name="data"></pv:packetinfo>
+                <pv:packetinfo pv:length="0" pv:display_name="Data" pv:internal_name="data" encapsulate="true"></pv:packetinfo>
             </metadata>
             <rect class="field" width="1024" height="40"/>
             <svg width="1024" height="40">
-                <text x="50%" y="50%" class="fieldText">Data</text>
+                <text x="50%" y="50%" class="fieldText">Data ...</text>
             </svg>
         </g>
     </g>

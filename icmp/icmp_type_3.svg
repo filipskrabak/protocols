@@ -27,7 +27,7 @@
                         <pv:name>Echo Reply</pv:name>
                         <pv:value>0</pv:value>
                     </pv:subtype>
-                    <pv:subtype>
+                    <pv:subtype selected="true">
                         <pv:name>Destination Unreachable</pv:name>
                         <pv:value>3</pv:value>
                     </pv:subtype>
@@ -130,11 +130,11 @@
     <g transform="translate(0,80)">
         <g transform="translate(0, 0)">
             <metadata>
-                <pv:packetinfo pv:length="32" pv:display_name="Internet Header + 64 bits of Data Datagram" pv:internal_name="ih_data"></pv:packetinfo>
+                <pv:packetinfo pv:length="0" pv:display_name="Internet Header + 64 bits of Data Datagram" pv:internal_name="ih_data"></pv:packetinfo>
             </metadata>
             <rect class="field" width="1024" height="40"/>
             <svg width="1024" height="40">
-                <text x="50%" y="50%" class="fieldText">Internet Header + 64 bits of Data Datagram</text>
+                <text x="50%" y="50%" class="fieldText">Internet Header + 64 bits of Data Datagram ...</text>
             </svg>
         </g>
     </g>
