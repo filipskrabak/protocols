@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:pv="http://www.packetvisualizer.com" pv:schemaLocation="urn:pvschema ../pvschema.xsd" height="1285" width="10030">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:pv="http://www.packetvisualizer.com" height="1285" width="10030">
     <!--Classes -->
     <style>
         <![CDATA[
@@ -134,7 +134,7 @@
     <g transform="translate(0,40)">
         <g transform="translate(0, 0)">
             <metadata>
-                <pv:packetinfo pv:length="0" pv:display_name="... the rest of the header ..." pv:internal_name="rest_of_the_header" encapsulate="true"></pv:packetinfo>
+                <pv:packetinfo pv:length="0" pv:display_name="... the rest of the header ..." pv:internal_name="rest_of_the_header" pv:encapsulate="true"></pv:packetinfo>
             </metadata>
             <rect class="field" width="1024" height="40"/>
             <svg width="1024" height="40">

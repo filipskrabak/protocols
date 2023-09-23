@@ -23,6 +23,7 @@
   <xs:complexType>
     <xs:sequence>
       <xs:element ref="tns:name"/>
+      <xs:element ref="tns:value"/>
     </xs:sequence>
 
     <xs:attribute ref="tns:selected"/>

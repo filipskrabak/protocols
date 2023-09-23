@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:pv="http://www.packetvisualizer.com" pv:schemaLocation="urn:pvschema ../pvschema.xsd" height="1285" width="10030">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:pv="http://www.packetvisualizer.com" height="1285" width="10030">
     <!--Classes -->
     <style>
         <![CDATA[
@@ -27,7 +27,7 @@
                         <pv:name>Echo Reply</pv:name>
                         <pv:value>0</pv:value>
                     </pv:subtype>
-                    <pv:subtype selected="true">
+                    <pv:subtype pv:selected="true">
                         <pv:name>Destination Unreachable</pv:name>
                         <pv:value>3</pv:value>
                     </pv:subtype>
@@ -47,7 +47,7 @@
                         <pv:name>Router Solicitation</pv:name>
                         <pv:value>10</pv:value>
                     </pv:subtype>
-                    <pv:subtype selected="true">
+                    <pv:subtype pv:selected="true">
                         <pv:name>Time Exceeded</pv:name>
                         <pv:value>11</pv:value>
                     </pv:subtype>

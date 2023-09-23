@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:pv="http://www.packetvisualizer.com" pv:schemaLocation="urn:pvschema ../pvschema.xsd" height="285" width="1030">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:pv="http://www.packetvisualizer.com" height="285" width="1030">
     <!--Classes -->
     <style>
         <![CDATA[
@@ -163,7 +163,7 @@
     <g transform="translate(0,200)">
         <g transform="translate(0, 0)">
             <metadata>
-                <pv:packetinfo pv:length="0" pv:max_length="320" pv:display_name="Options" pv:internal_name="options"></pv:packetinfo>
+                <pv:packetinfo pv:length="0" pv:length_max="320" pv:display_name="Options" pv:internal_name="options"></pv:packetinfo>
             </metadata>
             <rect class="field" width="768" height="40"/>
             <svg width="768" height="40">
@@ -172,7 +172,7 @@
         </g>
         <g transform="translate(768, 0)">
             <metadata>
-                <pv:packetinfo pv:length="0" pv:max_length="32" pv:display_name="Padding" pv:internal_name="padding"></pv:packetinfo>
+                <pv:packetinfo pv:length="0" pv:length_max="32" pv:display_name="Padding" pv:internal_name="padding"></pv:packetinfo>
             </metadata>
             <rect class="field" width="256" height="40"/>
             <svg width="256" height="40">
@@ -184,7 +184,7 @@
     <g transform="translate(0,240)">
         <g transform="translate(0, 0)">
             <metadata>
-                <pv:packetinfo pv:length="160" pv:max_length="524288" pv:display_name="Data" pv:internal_name="data"></pv:packetinfo>
+                <pv:packetinfo pv:length="160" pv:length_max="524288" pv:display_name="Data" pv:internal_name="data"></pv:packetinfo>
             </metadata>
             <rect class="field" width="1024" height="40"/>
             <svg width="1024" height="40">
