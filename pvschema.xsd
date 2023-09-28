@@ -11,6 +11,7 @@
 <!-- Attributes -->
 <xs:attribute name="length" type="xs:integer"/>
 <xs:attribute name="length_max" type="xs:integer"/>
+<xs:attribute name="endian" type="xs:string" default="big" />
 <xs:attribute name="display_name" type="xs:string"/>
 <xs:attribute name="internal_name" type="xs:string"/>
 <xs:attribute name="description" type="xs:string"/>
@@ -37,6 +38,7 @@
     </xs:sequence>
     <xs:attribute ref="tns:length" use="required"/>
     <xs:attribute ref="tns:length_max"/>
+    <xs:attribute ref="tns:endian"/>
     <xs:attribute ref="tns:display_name" use="required"/>
     <xs:attribute ref="tns:internal_name" use="required"/>
     <xs:attribute ref="tns:description"/>
