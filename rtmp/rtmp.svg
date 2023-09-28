@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:pv="http://www.packetvisualizer.com" height="285" width="1030">
+    <!--Classes -->
+    <style>
+        <![CDATA[
+            rect.field {
+                fill:rgb(255,255,255);
+                stroke-width:2;
+                stroke:rgb(0,0,0);
+            }
+            text.fieldText {
+                font-family: Verdana;
+                font-size: 14px;
+                fill: black;
+                text-anchor: middle;
+                dominant-baseline: middle;
+            }
+        ]]>
+    </style>
+    
+    <!-- 1b = 32px -->
+    <!-- First Row -->
+    <g transform="translate(0,0)">
+        <g transform="translate(0, 0)">
+            <metadata>
+                <pv:packetinfo pv:length="8" pv:display_name="Message Type" pv:internal_name="message_type"></pv:packetinfo>
+            </metadata>
+            <rect class="field" width="256" height="40"/>
+            <svg width="256" height="40">
+                <text x="50%" y="50%" class="fieldText">Message Type</text>
+            </svg>
+        </g>
+        <g transform="translate(256, 0)">
+            <metadata>
+                <pv:packetinfo pv:length="24" pv:display_name="Payload Length" pv:internal_name="payload_length"></pv:packetinfo>
+            </metadata>
+            <rect class="field" width="768" height="40"/>
+            <svg width="768" height="40">
+                <text x="50%" y="50%" class="fieldText">Payload Length</text>
+            </svg>
+        </g>
+    </g>
+    <!-- Second Row -->
+    <g transform="translate(0,40)">
+        <g transform="translate(0, 0)">
+            <metadata>
+                <pv:packetinfo pv:length="32" pv:display_name="Timestamp" pv:internal_name="timestamp"></pv:packetinfo>
+            </metadata>
+            <rect class="field" width="1024" height="40"/>
+            <svg width="1024" height="40">
+                <text x="50%" y="50%" class="fieldText">Timestamp</text>
+            </svg>
+        </g>
+    </g>
+    <!-- Third Row -->
+    <g transform="translate(0,80)">
+        <g transform="translate(0, 0)">
+            <metadata>
+                <pv:packetinfo pv:length="24" pv:display_name="Stream ID" pv:internal_name="stream_id"></pv:packetinfo>
+            </metadata>
+            <rect class="field" width="768" height="40"/>
+            <svg width="768" height="40">
+                <text x="50%" y="50%" class="fieldText">Stream ID</text>
+            </svg>
+        </g>
+        <g transform="translate(768, 0)">
+            <metadata>
+                <pv:packetinfo pv:length="0" pv:display_name="Data" pv:internal_name="data"></pv:packetinfo>
+            </metadata>
+            <rect class="field" width="256" height="40"/>
+            <svg width="256" height="40">
+                <text x="50%" y="50%" class="fieldText">Data ...</text>
+            </svg>
+        </g>
+    </g>
+    <!-- Fourth Row -->
+    <g transform="translate(0,120)">
+        <g transform="translate(0, 0)">
+            <metadata>
+                <pv:packetinfo pv:length="0" pv:display_name="Data" pv:internal_name="data"></pv:packetinfo>
+            </metadata>
+            <rect class="field" width="1024" height="40"/>
+            <svg width="1024" height="40">
+                <text x="50%" y="50%" class="fieldText">Data ...</text>
+            </svg>
+        </g>
+    </g>
+</svg> 
+ 
