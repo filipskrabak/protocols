@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:pd="http://www.protocoldescription.com" height="1285" width="10030">
+    <!-- Protocol Description -->
+    <metadata>
+        <pd:info>
+            <pd:name>Ethernet II</pd:name>
+            <pd:author>Filip Škrabák</pd:author>
+            <pd:description>Ethernet II protocol</pd:description>
+            <pd:version>1.0</pd:version>
+            <pd:last_update>2023-03-10</pd:last_update>
+            <pd:created>2023-03-10</pd:created>
+        </pd:info>
+        
+        <pd:field pd:length="48" pd:display_name="Destination MAC" pd:internal_name="dst_mac"></pd:field>
+        <pd:field pd:length="48" pd:display_name="Source MAC" pd:internal_name="src_mac"></pd:field>
+        <pd:field pd:length="16" pd:display_name="EtherType" pd:internal_name="ethertype">
+            <pd:option>
+                <pd:name>IPv4</pd:name>
+                <pd:value>0x0800</pd:value>
+            </pd:option>
+            <pd:option>
+                <pd:name>ARP</pd:name>
+                <pd:value>0x0806</pd:value>
+            </pd:option>
+            <pd:option>
+                <pd:name>IPv6</pd:name>
+                <pd:value>0x86DD</pd:value>
+            </pd:option>
+        </pd:field>
+        <pd:field pd:length="368" pd:length_max="12000" pd:display_name="Data" pd:internal_name="data" pd:encapsulate="true"></pd:field>
+        <pd:field pd:length="32" pd:display_name="FCS" pd:internal_name="fcs"></pd:field>
+    </metadata>
+
+    <!--Classes -->
+    <style>
+        <![CDATA[
+            rect.field {
+                fill:rgb(255,255,255);
+                stroke-width:2;
+                stroke:rgb(0,0,0);
+            }
+            text.fieldText {
+                font-family: Verdana;
+                font-size: 14px;
+                fill: black;
+                text-anchor: middle;
+                dominant-baseline: middle;
+            }
+        ]]>
+    </style>
+    
+    <!-- First Row -->
+    <!-- 1b = 8px -->
+    <g transform="translate(0,0)" data-id="dst_mac">
+        <g transform="translate(0, 0)">
+            <rect class="field" width="384" height="40"/>
+            <svg width="384" height="40">
+                <text x="50%" y="50%" class="fieldText">Destination MAC</text>
+            </svg>
+        </g>
+        <g transform="translate(0, 40)" data-id="src_mac">
+            <rect class="field" width="384" height="40"/>
+            <svg width="384" height="40">
+                <text x="50%" y="50%" class="fieldText">Source MAC</text>
+            </svg>
+        </g>
+        <g transform="translate(0, 80)" data-id="ethertype">
+            <rect class="field" width="128" height="40"/>
+            <svg width="128" height="40">
+                <text x="50%" y="50%" class="fieldText">EtherType</text>
+            </svg>
+        </g>
+        <g transform="translate(0, 80)" data-id="data">
+            <g transform="translate(128, 0)">
+                <rect class="field" width="256" height="40"/>
+                <svg width="256" height="40">
+                    <text x="50%" y="50%" class="fieldText">Data</text>
+                </svg>
+            </g>
+            <g transform="translate(0, 40)">
+                <rect class="field" width="384" height="40"/>
+                <svg width="384" height="40">
+                    <text x="50%" y="50%" class="fieldText">Data ...</text>
+                </svg>
+            </g>
+        </g>
+        <g transform="translate(0, 160)" data-id="fcs">
+            <rect class="field" width="256" height="40"/>
+            <svg width="256" height="40">
+                <text x="50%" y="50%" class="fieldText">FCS</text>
+            </svg>
+        </g>
+    </g>
+</svg> 
+ 
