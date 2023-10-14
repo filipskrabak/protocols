@@ -1,4 +1,22 @@
- <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:pv="http://www.packetvisualizer.com" height="1285" width="10030">
+ <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:pd="http://www.protocoldescription.com" height="1285" width="10030">
+    <!-- Protocol Description -->
+    <metadata>
+        <pd:info>
+            <pd:name>UDP</pd:name>
+            <pd:author>Filip Škrabák</pd:author>
+            <pd:description>UDP protocol</pd:description>
+            <pd:version>1.0</pd:version>
+            <pd:last_update>2023-14-10</pd:last_update>
+            <pd:created>2023-14-10</pd:created>
+        </pd:info>
+        
+        <pd:field pd:length="16" pd:display_name="Source Port" pd:id="source_port"></pd:field>
+        <pd:field pd:length="16" pd:display_name="Destination Port" pd:id="destination_port"></pd:field>
+        <pd:field pd:length="16" pd:display_name="Length" pd:id="length"></pd:field>
+        <pd:field pd:length="16" pd:display_name="Checksum" pd:id="checksum"></pd:field>
+        <pd:field pd:length="0" pd:display_name="Data" pd:id="data" pd:encapsulate="true"></pd:field>
+    </metadata>
+
     <!--Classes -->
     <style>
         <![CDATA[
@@ -22,19 +40,13 @@
     <g transform="translate(0,0)">
         <!-- UDP -->
         <g transform="translate(0, 0)">
-            <g transform="translate(0, 0)">
-                <metadata>
-                    <pv:packetinfo pv:length="16" pv:display_name="Source Port" pv:internal_name="source_port"></pv:packetinfo>
-                </metadata>
+            <g transform="translate(0, 0)" data-id="source_port">
                 <rect class="field" width="512" height="40"/>
                 <svg width="512" height="40">
                     <text x="50%" y="50%" class="fieldText">Source Port</text>
                 </svg>
             </g>
-            <g transform="translate(512, 0)">
-                <metadata>
-                    <pv:packetinfo pv:length="16" pv:display_name="Destination Port" pv:internal_name="destination_port"></pv:packetinfo>
-                </metadata>
+            <g transform="translate(512, 0)" data-id="destination_port">
                 <rect class="field" width="512" height="40"/>
                 <svg width="512" height="40">
                     <text x="50%" y="50%" class="fieldText">Destination Port</text>
@@ -42,29 +54,20 @@
             </g>
         </g>
         <g transform="translate(0, 40)">
-            <g transform="translate(0, 0)">
-                <metadata>
-                    <pv:packetinfo pv:length="16" pv:display_name="Length" pv:internal_name="length"></pv:packetinfo>
-                </metadata>
+            <g transform="translate(0, 0)" data-id="length">
                 <rect class="field" width="512" height="40"/>
                 <svg width="512" height="40">
                     <text x="50%" y="50%" class="fieldText">Length</text>
                 </svg>
             </g>
-            <g transform="translate(512, 0)">
-                <metadata>
-                    <pv:packetinfo pv:length="16" pv:display_name="Checksum" pv:internal_name="checksum"></pv:packetinfo>
-                </metadata>
+            <g transform="translate(512, 0)" data-id="checksum">
                 <rect class="field" width="512" height="40"/>
                 <svg width="512" height="40">
                     <text x="50%" y="50%" class="fieldText">Checksum</text>
                 </svg>
             </g>
         </g>
-        <g transform="translate(0, 80)">
-            <metadata>
-                <pv:packetinfo pv:length="0" pv:display_name="Data" pv:internal_name="data" pv:encapsulate="true"></pv:packetinfo>
-            </metadata>
+        <g transform="translate(0, 80)" data-id="data">
             <rect class="field" width="1024" height="40"/>
             <svg width="1024" height="40">
                 <text x="50%" y="50%" class="fieldText">Data ...</text>

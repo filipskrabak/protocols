@@ -1,4 +1,26 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:pv="http://www.packetvisualizer.com" height="1285" width="10030">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:pd="http://www.protocoldescription.com" height="1285" width="10030">
+    <!-- Protocol Description -->
+    <metadata>
+        <pd:info>
+            <pd:name>Ethernet II</pd:name>
+            <pd:author>Filip Škrabák</pd:author>
+            <pd:description>Ethernet II protocol</pd:description>
+            <pd:version>1.0</pd:version>
+            <pd:last_update>2023-03-10</pd:last_update>
+            <pd:created>2023-03-10</pd:created>
+        </pd:info>
+        
+        <pd:field pd:length="48" pd:display_name="Destination MAC" pd:id="dst_mac"></pd:field>
+        <pd:field pd:length="48" pd:display_name="Source MAC" pd:id="src_mac"></pd:field>
+        <pd:field pd:length="16" pd:display_name="EtherType" pd:id="ethertype">
+            <pd:option pd:name="IPv4" pd:value="0x0800"></pd:option>
+            <pd:option pd:name="ARP" pd:value="0x0806"></pd:option>
+            <pd:option pd:name="IPv6" pd:value="0x86DD"></pd:option>
+        </pd:field>
+        <pd:field pd:length="368" pd:length_max="12000" pd:display_name="Data" pd:id="data" pd:encapsulate="true"></pd:field>
+        <pd:field pd:length="32" pd:display_name="FCS" pd:id="fcs"></pd:field>
+    </metadata>
+
     <!--Classes -->
     <style>
         <![CDATA[
@@ -20,50 +42,25 @@
     <!-- First Row -->
     <!-- 1b = 8px -->
     <g transform="translate(0,0)">
-        <g transform="translate(0, 0)">
-            <metadata>
-                <pv:packetinfo pv:length="48" pv:display_name="Destination MAC" pv:internal_name="dst_mac"></pv:packetinfo>
-            </metadata>
+        <g transform="translate(0, 0)" data-id="dst_mac">
             <rect class="field" width="384" height="40"/>
             <svg width="384" height="40">
                 <text x="50%" y="50%" class="fieldText">Destination MAC</text>
             </svg>
         </g>
-        <g transform="translate(0, 40)">
-            <metadata>
-                <pv:packetinfo pv:length="48" pv:display_name="Source MAC" pv:internal_name="src_mac"></pv:packetinfo>
-            </metadata>
+        <g transform="translate(0, 40)" data-id="src_mac">
             <rect class="field" width="384" height="40"/>
             <svg width="384" height="40">
                 <text x="50%" y="50%" class="fieldText">Source MAC</text>
             </svg>
         </g>
-        <g transform="translate(0, 80)">
-            <metadata>
-                <pv:packetinfo pv:length="16" pv:display_name="EtherType" pv:internal_name="ethertype">
-                    <pv:subtype>
-                        <pv:name>IPv4</pv:name>
-                        <pv:value>0x0800</pv:value>
-                    </pv:subtype>
-                    <pv:subtype>
-                        <pv:name>ARP</pv:name>
-                        <pv:value>0x0806</pv:value>
-                    </pv:subtype>
-                    <pv:subtype>
-                        <pv:name>IPv6</pv:name>
-                        <pv:value>0x86DD</pv:value>
-                    </pv:subtype>
-                </pv:packetinfo>
-            </metadata>
+        <g transform="translate(0, 80)" data-id="ethertype">
             <rect class="field" width="128" height="40"/>
             <svg width="128" height="40">
                 <text x="50%" y="50%" class="fieldText">EtherType</text>
             </svg>
         </g>
-        <g transform="translate(0, 80)">
-            <metadata>
-                <pv:packetinfo pv:length="368" pv:length_max="12000" pv:display_name="Data" pv:internal_name="data" pv:encapsulate="true"></pv:packetinfo>
-            </metadata>
+        <g transform="translate(0, 80)" data-id="data">
             <g transform="translate(128, 0)">
                 <rect class="field" width="256" height="40"/>
                 <svg width="256" height="40">
@@ -73,50 +70,11 @@
             <g transform="translate(0, 40)">
                 <rect class="field" width="384" height="40"/>
                 <svg width="384" height="40">
-                    <text x="50%" y="50%" class="fieldText">Data</text>
-                </svg>
-            </g>
-            <g transform="translate(0, 80)">
-                <rect class="field" width="384" height="40"/>
-                <svg width="384" height="40">
-                    <text x="50%" y="50%" class="fieldText">Data</text>
-                </svg>
-            </g>
-            <g transform="translate(0, 120)">
-                <rect class="field" width="384" height="40"/>
-                <svg width="384" height="40">
-                    <text x="50%" y="50%" class="fieldText">Data</text>
-                </svg>
-            </g>
-            <g transform="translate(0, 160)">
-                <rect class="field" width="384" height="40"/>
-                <svg width="384" height="40">
-                    <text x="50%" y="50%" class="fieldText">Data</text>
-                </svg>
-            </g>
-            <g transform="translate(0, 200)">
-                <rect class="field" width="384" height="40"/>
-                <svg width="384" height="40">
-                    <text x="50%" y="50%" class="fieldText">Data</text>
-                </svg>
-            </g>
-            <g transform="translate(0, 240)">
-                <rect class="field" width="384" height="40"/>
-                <svg width="384" height="40">
-                    <text x="50%" y="50%" class="fieldText">Data</text>
-                </svg>
-            </g>
-            <g transform="translate(0, 280)">
-                <rect class="field" width="384" height="40"/>
-                <svg width="384" height="40">
-                    <text x="50%" y="50%" class="fieldText">Data</text>
+                    <text x="50%" y="50%" class="fieldText">Data ...</text>
                 </svg>
             </g>
         </g>
-        <g transform="translate(0, 400)">
-            <metadata>
-                <pv:packetinfo pv:length="32" pv:display_name="FCS" pv:internal_name="fcs"></pv:packetinfo>
-            </metadata>
+        <g transform="translate(0, 160)" data-id="fcs">
             <rect class="field" width="256" height="40"/>
             <svg width="256" height="40">
                 <text x="50%" y="50%" class="fieldText">FCS</text>

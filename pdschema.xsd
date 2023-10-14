@@ -6,8 +6,6 @@
 
 <!-- Simple elements -->
 <xs:element name="name" type="xs:string"/>
-<xs:element name="value" type="xs:string"/>
-
 <xs:element name="author" type="xs:string"/>
 <xs:element name="description" type="xs:string"/>
 <xs:element name="version" type="xs:string"/>
@@ -15,11 +13,13 @@
 <xs:element name="created" type="xs:string"/>
 
 <!-- Attributes -->
+<xs:attribute name="name" type="xs:string"/>
+<xs:attribute name="value" type="xs:string"/>
 <xs:attribute name="length" type="xs:integer"/>
 <xs:attribute name="length_max" type="xs:integer"/>
 <xs:attribute name="endian" type="xs:string" default="big" />
 <xs:attribute name="display_name" type="xs:string"/>
-<xs:attribute name="internal_name" type="xs:string"/>
+<xs:attribute name="id" type="xs:string"/>
 <xs:attribute name="description" type="xs:string"/>
 <xs:attribute name="selected" type="xs:boolean"/>   
 <xs:attribute name="encapsulate" type="xs:boolean"/>
@@ -28,11 +28,8 @@
 
 <xs:element name="option">
   <xs:complexType>
-    <xs:sequence>
-      <xs:element ref="tns:name"/>
-      <xs:element ref="tns:value"/>
-    </xs:sequence>
-
+    <xs:attribute ref="tns:name" use="required"/>
+    <xs:attribute ref="tns:value" use="required"/>
     <xs:attribute ref="tns:selected"/>
   </xs:complexType>
 </xs:element>
@@ -46,7 +43,7 @@
     <xs:attribute ref="tns:length_max"/>
     <xs:attribute ref="tns:endian"/>
     <xs:attribute ref="tns:display_name" use="required"/>
-    <xs:attribute ref="tns:internal_name" use="required"/>
+    <xs:attribute ref="tns:id" use="required"/>
     <xs:attribute ref="tns:description"/>
     <xs:attribute ref="tns:encapsulate"/>
   </xs:complexType>

@@ -1,4 +1,34 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:pv="http://www.packetvisualizer.com" height="1285" width="10030">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:pd="http://www.protocoldescription.com" height="1285" width="10030">
+    <!-- Protocol Description -->
+    <metadata>
+        <pd:info>
+            <pd:name>ICMP Type 11 Header</pd:name>
+            <pd:author>Filip Škrabák</pd:author>
+            <pd:description>ICMP protocol (Type 11)</pd:description>
+            <pd:version>1.0</pd:version>
+            <pd:last_update>2023-14-10</pd:last_update>
+            <pd:created>2023-14-10</pd:created>
+        </pd:info>
+        
+        <pd:field pd:length="8" pd:display_name="Type" pd:id="type">
+            <pd:option pd:name="Echo Reply" pd:value="0"></pd:option>
+            <pd:option pd:name="Destination Unreachable" pd:value="3"></pd:option>
+            <pd:option pd:name="Redirect" pd:value="5"></pd:option>
+            <pd:option pd:name="Echo" pd:value="8"></pd:option>
+            <pd:option pd:name="Router Advertisement" pd:value="9"></pd:option>
+            <pd:option pd:name="Router Solicitation" pd:value="10"></pd:option>
+            <pd:option pd:name="Time Exceeded" pd:value="11" pd:selected="true"></pd:option>
+            <pd:option pd:name="Parameter Problem" pd:value="12" pd:selected="true"></pd:option>
+            <pd:option pd:name="Timestamp" pd:value="13"></pd:option>
+            <pd:option pd:name="Timestamp Reply" pd:value="14"></pd:option>
+        </pd:field>
+        <pd:field pd:length="8" pd:display_name="Code" pd:id="code">
+            <pd:option pd:name="Net Unreachable" pd:value="0"></pd:option>
+        </pd:field>
+        <pd:field pd:length="16" pd:display_name="Checksum" pd:id="checksum"></pd:field>
+        <pd:field pd:length="32" pd:display_name="unused" pd:id="unused"></pd:field>
+        <pd:field pd:length="0" pd:display_name="Internet Header + 64 bits of Data Datagram" pd:id="ih_data"></pd:field>
+    </metadata>
     <!--Classes -->
     <style>
         <![CDATA[
@@ -20,74 +50,19 @@
     <!-- 1b = 32px -->
     <!-- First Row -->
     <g transform="translate(0,0)">
-        <g transform="translate(0, 0)">
-            <metadata>
-                <pv:packetinfo pv:length="8" pv:display_name="Type" pv:internal_name="type">
-                    <pv:subtype>
-                        <pv:name>Echo Reply</pv:name>
-                        <pv:value>0</pv:value>
-                    </pv:subtype>
-                    <pv:subtype>
-                        <pv:name>Destination Unreachable</pv:name>
-                        <pv:value>3</pv:value>
-                    </pv:subtype>
-                    <pv:subtype>
-                        <pv:name>Redirect</pv:name>
-                        <pv:value>5</pv:value>
-                    </pv:subtype>
-                    <pv:subtype>
-                        <pv:name>Echo</pv:name>
-                        <pv:value>8</pv:value>
-                    </pv:subtype>
-                    <pv:subtype>
-                        <pv:name>Router Advertisement</pv:name>
-                        <pv:value>9</pv:value>
-                    </pv:subtype>
-                    <pv:subtype>
-                        <pv:name>Router Solicitation</pv:name>
-                        <pv:value>10</pv:value>
-                    </pv:subtype>
-                    <pv:subtype pv:selected="true">
-                        <pv:name>Time Exceeded</pv:name>
-                        <pv:value>11</pv:value>
-                    </pv:subtype>
-                    <pv:subtype pv:selected="true">
-                        <pv:name>Parameter Problem</pv:name>
-                        <pv:value>12</pv:value>
-                    </pv:subtype>
-                    <pv:subtype>
-                        <pv:name>Timestamp</pv:name>
-                        <pv:value>13</pv:value>
-                    </pv:subtype>
-                    <pv:subtype>
-                        <pv:name>Timestamp Reply</pv:name>
-                        <pv:value>14</pv:value>
-                    </pv:subtype>
-                </pv:packetinfo>
-            </metadata>
+        <g transform="translate(0, 0)" data-id="type">
             <rect class="field" width="256" height="40"/>
             <svg width="256" height="40">
                 <text x="50%" y="50%" class="fieldText">Type</text>
             </svg>
         </g>
-        <g transform="translate(256, 0)">
-            <metadata>
-                <pv:packetinfo pv:length="8" pv:display_name="Code" pv:internal_name="code">
-                    <pv:subtype>
-                        <pv:name>Net Unreachable</pv:name>
-                        <pv:value>0</pv:value>
-                    </pv:subtype>
-                </pv:packetinfo>
-            </metadata>
+        <g transform="translate(256, 0)" data-id="code">
             <rect class="field" width="256" height="40"/>
             <svg width="256" height="40">
                 <text x="50%" y="50%" class="fieldText">Code</text>
             </svg>
         </g>
-        <g transform="translate(512, 0)">
-            <metadata>
-                <pv:packetinfo pv:length="16" pv:display_name="Checksum" pv:internal_name="checksum"></pv:packetinfo>
-            </metadata>
+        <g transform="translate(512, 0)" data-id="checksum">
             <rect class="field" width="512" height="40"/>
             <svg width="512" height="40">
                 <text x="50%" y="50%" class="fieldText">Checksum</text>
@@ -96,10 +71,7 @@
     </g>
     <!-- Second Row -->
     <g transform="translate(0,40)">
-        <g transform="translate(0, 0)">
-            <metadata>
-                <pv:packetinfo pv:length="32" pv:display_name="unused" pv:internal_name="unsused"></pv:packetinfo>
-            </metadata>
+        <g transform="translate(0, 0)" data-id="unused">
             <rect class="field" width="1024" height="40"/>
             <svg width="1024" height="40">
                 <text x="50%" y="50%" class="fieldText">unused</text>
@@ -108,10 +80,7 @@
     </g>
     <!-- Third Row -->
     <g transform="translate(0,80)">
-        <g transform="translate(0, 0)">
-            <metadata>
-                <pv:packetinfo pv:length="0" pv:display_name="Internet Header + 64 bits of Data Datagram" pv:internal_name="ih_data"></pv:packetinfo>
-            </metadata>
+        <g transform="translate(0, 0)" data-id="ih_data">
             <rect class="field" width="1024" height="40"/>
             <svg width="1024" height="40">
                 <text x="50%" y="50%" class="fieldText">Internet Header + 64 bits of Data Datagram ...</text>

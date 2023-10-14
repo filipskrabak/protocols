@@ -1,4 +1,30 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:pv="http://www.packetvisualizer.com" height="285" width="1030">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:pd="http://www.protocoldescription.com" height="285" width="1030">
+    <!-- Protocol Description -->
+    <metadata>
+        <pd:info>
+            <pd:name>TCP</pd:name>
+            <pd:author>Filip Škrabák</pd:author>
+            <pd:description>TCP protocol</pd:description>
+            <pd:version>1.0</pd:version>
+            <pd:last_update>2023-14-10</pd:last_update>
+            <pd:created>2023-14-10</pd:created>
+        </pd:info>
+        
+        <pd:field pd:length="16" pd:display_name="Source port" pd:id="src_port"></pd:field>
+        <pd:field pd:length="16" pd:display_name="Destination port" pd:id="dst_port"></pd:field>
+        <pd:field pd:length="32" pd:display_name="Sequence Number" pd:id="seq_num"></pd:field>
+        <pd:field pd:length="32" pd:display_name="Acknowledgement Number" pd:id="ack_num"></pd:field>
+        <pd:field pd:length="4" pd:display_name="Header Length" pd:id="header_length"></pd:field>
+        <pd:field pd:length="3" pd:display_name="Reserved" pd:id="reserved"></pd:field>
+        <pd:field pd:length="9" pd:display_name="Control Flags" pd:id="control_flags"></pd:field>
+        <pd:field pd:length="16" pd:display_name="Window Size" pd:id="window_size"></pd:field>
+        <pd:field pd:length="16" pd:display_name="Checksum" pd:id="checksum"></pd:field>
+        <pd:field pd:length="16" pd:display_name="Urgent Pointer" pd:id="urgent_pointer"></pd:field>
+        <pd:field pd:length="0" pd:display_name="Options" pd:id="options"></pd:field>
+        <pd:field pd:length="0" pd:display_name="Padding" pd:id="padding"></pd:field>
+        <pd:field pd:length="0" pd:display_name="Data" pd:id="data"></pd:field>
+    </metadata>
+
     <!--Classes -->
     <style>
         <![CDATA[
@@ -19,19 +45,13 @@
     
     <!-- First Row -->
     <g transform="translate(0,0)">
-        <g transform="translate(0, 0)">
-            <metadata>
-                <pv:packetinfo pv:length="16" pv:display_name="Source port" pv:internal_name="src_port"></pv:packetinfo>
-            </metadata>
+        <g transform="translate(0, 0)" data-id="src_port">
             <rect class="field" width="512" height="40"/>
             <svg width="512" height="40">
                 <text x="50%" y="50%" class="fieldText">Source port</text>
             </svg>
         </g>
-        <g transform="translate(512, 0)">
-            <metadata>
-                <pv:packetinfo pv:length="16" pv:display_name="Destination port" pv:internal_name="dst_port"></pv:packetinfo>
-            </metadata>
+        <g transform="translate(512, 0)" data-id="dst_port">
             <rect class="field" width="512" height="40"/>
             <svg width="512" height="40">
                 <text x="50%" y="50%" class="fieldText">Destination port</text>
@@ -40,10 +60,7 @@
     </g>
     <!-- Second Row -->
     <g transform="translate(0,40)">
-        <g transform="translate(0, 0)">
-            <metadata>
-                <pv:packetinfo pv:length="32" pv:display_name="Source port" pv:internal_name="src_port"></pv:packetinfo>
-            </metadata>
+        <g transform="translate(0, 0)" data-id="seq_num">
             <rect class="field" width="1024" height="40"/>
             <svg width="1024" height="40">
                 <text x="50%" y="50%" class="fieldText">Sequence Number</text>
@@ -52,10 +69,7 @@
     </g>
     <!-- Third Row -->
     <g transform="translate(0,80)">
-        <g transform="translate(0, 0)">
-            <metadata>
-                <pv:packetinfo pv:length="32" pv:display_name="Acknowledgement Number" pv:internal_name="ack_num"></pv:packetinfo>
-            </metadata>
+        <g transform="translate(0, 0)" data-id="ack_num">
             <rect class="field" width="1024" height="40"/>
             <svg width="1024" height="40">
                 <text x="50%" y="50%" class="fieldText">Acknowledgement Number</text>
@@ -64,37 +78,25 @@
     </g>
     <!-- Fourth Row -->
     <g transform="translate(0,120)">
-        <g transform="translate(0, 0)">
-            <metadata>
-                <pv:packetinfo pv:length="4" pv:display_name="Header Length" pv:internal_name="header_length"></pv:packetinfo>
-            </metadata>
+        <g transform="translate(0, 0)" data-id="header_length">
             <rect class="field" width="128" height="40"/>
             <svg width="128" height="40">
                 <text x="50%" y="50%" class="fieldText">Header Length</text>
             </svg>
         </g>
-        <g transform="translate(128, 0)">
-            <metadata>
-                <pv:packetinfo pv:length="3" pv:display_name="Reserved" pv:internal_name="reserved"></pv:packetinfo>
-            </metadata>
+        <g transform="translate(128, 0)" data-id="reserved">
             <rect class="field" width="96" height="40"/>
             <svg width="96" height="40">
                 <text x="50%" y="50%" class="fieldText">Reserved</text>
             </svg>
         </g>
-        <g transform="translate(224, 0)">
-            <metadata>
-                <pv:packetinfo pv:length="9" pv:display_name="Control Flags" pv:internal_name="control_flags"></pv:packetinfo>
-            </metadata>
+        <g transform="translate(224, 0)" data-id="control_flags">
             <rect class="field" width="288" height="40"/>
             <svg width="288" height="40">
                 <text x="50%" y="50%" class="fieldText">Control Flags</text>
             </svg>
         </g>
-        <g transform="translate(512, 0)">
-            <metadata>
-                <pv:packetinfo pv:length="16" pv:display_name="Window Size" pv:internal_name="window_size"></pv:packetinfo>
-            </metadata>
+        <g transform="translate(512, 0)" data-id="window_size">
             <rect class="field" width="512" height="40"/>
             <svg width="512" height="40">
                 <text x="50%" y="50%" class="fieldText">Window Size</text>
@@ -103,19 +105,13 @@
     </g>
     <!-- Fifth Row -->
     <g transform="translate(0,160)">
-        <g transform="translate(0, 0)">
-            <metadata>
-                <pv:packetinfo pv:length="16" pv:display_name="Checksum" pv:internal_name="checksum"></pv:packetinfo>
-            </metadata>
+        <g transform="translate(0, 0)" data-id="checksum">
             <rect class="field" width="512" height="40"/>
             <svg width="512" height="40">
                 <text x="50%" y="50%" class="fieldText">Checksum</text>
             </svg>
         </g>
-        <g transform="translate(512, 0)">
-            <metadata>
-                <pv:packetinfo pv:length="16" pv:display_name="Urgent Pointer" pv:internal_name="urgent_pointer"></pv:packetinfo>
-            </metadata>
+        <g transform="translate(512, 0)" data-id="urgent_pointer">
             <rect class="field" width="512" height="40"/>
             <svg width="512" height="40">
                 <text x="50%" y="50%" class="fieldText">Urgent Pointer</text>
@@ -124,19 +120,13 @@
     </g> 
     <!-- Sixth Row -->
     <g transform="translate(0,200)">
-        <g transform="translate(0, 0)">
-            <metadata>
-                <pv:packetinfo pv:length="0" pv:display_name="Options" pv:internal_name="options"></pv:packetinfo>
-            </metadata>
+        <g transform="translate(0, 0)" data-id="options">
             <rect class="field" width="768" height="40"/>
             <svg width="768" height="40">
                 <text x="50%" y="50%" class="fieldText">Options ...</text>
             </svg>
         </g>
-        <g transform="translate(768, 0)">
-            <metadata>
-                <pv:packetinfo pv:length="0" pv:display_name="Padding" pv:internal_name="padding"></pv:packetinfo>
-            </metadata>
+        <g transform="translate(768, 0)" data-id="padding">
             <rect class="field" width="256" height="40"/>
             <svg width="256" height="40">
                 <text x="50%" y="50%" class="fieldText">Padding ...</text>
@@ -145,10 +135,7 @@
     </g>   
     <!-- Seventh Row -->
     <g transform="translate(0,240)">
-        <g transform="translate(0, 0)">
-            <metadata>
-                <pv:packetinfo pv:length="0" pv:display_name="Data" pv:internal_name="data"></pv:packetinfo>
-            </metadata>
+        <g transform="translate(0, 0)" data-id="data">
             <rect class="field" width="1024" height="40"/>
             <svg width="1024" height="40">
                 <text x="50%" y="50%" class="fieldText">Data ...</text>

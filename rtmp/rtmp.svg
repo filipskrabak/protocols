@@ -1,4 +1,35 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:pv="http://www.packetvisualizer.com" height="285" width="1030">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:pd="http://www.protocoldescription.com" height="285" width="1030">
+    <!-- Protocol Description -->
+    <metadata>
+        <pd:info>
+            <pd:name>RTMP</pd:name>
+            <pd:author>Filip Škrabák</pd:author>
+            <pd:description>RTMP streaming protocol</pd:description>
+            <pd:version>1.0</pd:version>
+            <pd:last_update>2023-14-10</pd:last_update>
+            <pd:created>2023-14-10</pd:created>
+        </pd:info>
+        
+        <pd:field pd:length="8" pd:display_name="Message Type" pd:id="message_type">
+            <pd:option pd:name="Set Chunk Size" pd:value="1"></pd:option>
+            <pd:option pd:name="Abort Message" pd:value="2"></pd:option>
+            <pd:option pd:name="Acknowledgement" pd:value="3"></pd:option>
+            <pd:option pd:name="User Control Message" pd:value="4"></pd:option>
+            <pd:option pd:name="Window Acknowledgement Size" pd:value="5"></pd:option>
+            <pd:option pd:name="Set Peer Bandwidth" pd:value="6"></pd:option>
+            <pd:option pd:name="Audio Message" pd:value="8"></pd:option>
+            <pd:option pd:name="Video Message" pd:value="9"></pd:option>
+            <pd:option pd:name="Data Message" pd:value="18"></pd:option>
+            <pd:option pd:name="Shared Object Message" pd:value="19"></pd:option>
+            <pd:option pd:name="Command Message" pd:value="20"></pd:option>
+            <pd:option pd:name="Aggregate Message" pd:value="22"></pd:option>
+        </pd:field>
+        <pd:field pd:length="24" pd:display_name="Payload Length" pd:id="payload_length"></pd:field>
+        <pd:field pd:length="32" pd:display_name="Timestamp" pd:id="timestamp"></pd:field>
+        <pd:field pd:length="24" pd:display_name="Stream ID" pd:id="stream_id"></pd:field>
+        <pd:field pd:length="0" pd:display_name="Data" pd:id="data"></pd:field>
+    </metadata>
+
     <!--Classes -->
     <style>
         <![CDATA[
@@ -20,19 +51,13 @@
     <!-- 1b = 32px -->
     <!-- First Row -->
     <g transform="translate(0,0)">
-        <g transform="translate(0, 0)">
-            <metadata>
-                <pv:packetinfo pv:length="8" pv:display_name="Message Type" pv:internal_name="message_type"></pv:packetinfo>
-            </metadata>
+        <g transform="translate(0, 0)" data-id="message_type">
             <rect class="field" width="256" height="40"/>
             <svg width="256" height="40">
                 <text x="50%" y="50%" class="fieldText">Message Type</text>
             </svg>
         </g>
-        <g transform="translate(256, 0)">
-            <metadata>
-                <pv:packetinfo pv:length="24" pv:display_name="Payload Length" pv:internal_name="payload_length"></pv:packetinfo>
-            </metadata>
+        <g transform="translate(256, 0)" data-id="payload_length">
             <rect class="field" width="768" height="40"/>
             <svg width="768" height="40">
                 <text x="50%" y="50%" class="fieldText">Payload Length</text>
@@ -41,10 +66,7 @@
     </g>
     <!-- Second Row -->
     <g transform="translate(0,40)">
-        <g transform="translate(0, 0)">
-            <metadata>
-                <pv:packetinfo pv:length="32" pv:display_name="Timestamp" pv:internal_name="timestamp"></pv:packetinfo>
-            </metadata>
+        <g transform="translate(0, 0)" data-id="timestamp">
             <rect class="field" width="1024" height="40"/>
             <svg width="1024" height="40">
                 <text x="50%" y="50%" class="fieldText">Timestamp</text>
@@ -53,19 +75,13 @@
     </g>
     <!-- Third Row -->
     <g transform="translate(0,80)">
-        <g transform="translate(0, 0)">
-            <metadata>
-                <pv:packetinfo pv:length="24" pv:display_name="Stream ID" pv:internal_name="stream_id"></pv:packetinfo>
-            </metadata>
+        <g transform="translate(0, 0)" data-id="stream_id">
             <rect class="field" width="768" height="40"/>
             <svg width="768" height="40">
                 <text x="50%" y="50%" class="fieldText">Stream ID</text>
             </svg>
         </g>
-        <g transform="translate(768, 0)">
-            <metadata>
-                <pv:packetinfo pv:length="0" pv:display_name="Data" pv:internal_name="data"></pv:packetinfo>
-            </metadata>
+        <g transform="translate(768, 0)" data-id="data">
             <rect class="field" width="256" height="40"/>
             <svg width="256" height="40">
                 <text x="50%" y="50%" class="fieldText">Data ...</text>
@@ -74,10 +90,7 @@
     </g>
     <!-- Fourth Row -->
     <g transform="translate(0,120)">
-        <g transform="translate(0, 0)">
-            <metadata>
-                <pv:packetinfo pv:length="0" pv:display_name="Data" pv:internal_name="data"></pv:packetinfo>
-            </metadata>
+        <g transform="translate(0, 0)" data-id="data">
             <rect class="field" width="1024" height="40"/>
             <svg width="1024" height="40">
                 <text x="50%" y="50%" class="fieldText">Data ...</text>

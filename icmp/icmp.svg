@@ -1,4 +1,43 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:pv="http://www.packetvisualizer.com" height="1285" width="10030">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:pd="http://www.protocoldescription.com" height="1285" width="10030">
+    <!-- Protocol Description -->
+    <metadata>
+        <pd:info>
+            <pd:name>ICMP Basic Header</pd:name>
+            <pd:author>Filip Škrabák</pd:author>
+            <pd:description>ICMP protocol</pd:description>
+            <pd:version>1.0</pd:version>
+            <pd:last_update>2023-14-10</pd:last_update>
+            <pd:created>2023-14-10</pd:created>
+        </pd:info>
+        
+        <pd:field pd:length="8" pd:display_name="Type" pd:id="type">
+            <pd:option pd:name="Echo Reply" pd:value="0"></pd:option>
+            <pd:option pd:name="Destination Unreachable" pd:value="3"></pd:option>
+            <pd:option pd:name="Redirect" pd:value="5"></pd:option>
+            <pd:option pd:name="Echo" pd:value="8"></pd:option>
+            <pd:option pd:name="Router Advertisement" pd:value="9"></pd:option>
+            <pd:option pd:name="Router Solicitation" pd:value="10"></pd:option>
+            <pd:option pd:name="Time Exceeded" pd:value="11"></pd:option>
+            <pd:option pd:name="Parameter Problem" pd:value="12"></pd:option>
+            <pd:option pd:name="Timestamp" pd:value="13"></pd:option>
+            <pd:option pd:name="Timestamp Reply" pd:value="14"></pd:option>
+        </pd:field>
+        <pd:field pd:length="8" pd:display_name="Code" pd:id="code">
+            <pd:option pd:name="Net Unreachable" pd:value="0"></pd:option>
+            <pd:option pd:name="Host Unreachable" pd:value="1"></pd:option>
+            <pd:option pd:name="Protocol Unreachable" pd:value="2"></pd:option>
+            <pd:option pd:name="Port Unreachable" pd:value="3"></pd:option>
+            <pd:option pd:name="Fragmentation Needed and Don't Fragment was Set" pd:value="4"></pd:option>
+            <pd:option pd:name="Source Route Failed" pd:value="5"></pd:option>
+            <pd:option pd:name="Destination Network Unknown" pd:value="6"></pd:option>
+            <pd:option pd:name="Destination Host Unknown" pd:value="7"></pd:option>
+            <pd:option pd:name="Source Host Isolated" pd:value="8"></pd:option>
+            <pd:option pd:name="Network Administratively Prohibited" pd:value="9"></pd:option>
+        </pd:field>
+        <pd:field pd:length="16" pd:display_name="Checksum" pd:id="checksum"></pd:field>
+        <pd:field pd:length="0" pd:display_name="... the rest of the header ..." pd:id="rest_of_the_header" pd:encapsulate="true"></pd:field>
+    </metadata>
+
     <!--Classes -->
     <style>
         <![CDATA[
@@ -20,110 +59,19 @@
     <!-- 1b = 32px -->
     <!-- First Row -->
     <g transform="translate(0,0)">
-        <g transform="translate(0, 0)">
-            <metadata>
-                <pv:packetinfo pv:length="8" pv:display_name="Type" pv:internal_name="type">
-                    <pv:subtype>
-                        <pv:name>Echo Reply</pv:name>
-                        <pv:value>0</pv:value>
-                    </pv:subtype>
-                    <pv:subtype>
-                        <pv:name>Destination Unreachable</pv:name>
-                        <pv:value>3</pv:value>
-                    </pv:subtype>
-                    <pv:subtype>
-                        <pv:name>Redirect</pv:name>
-                        <pv:value>5</pv:value>
-                    </pv:subtype>
-                    <pv:subtype>
-                        <pv:name>Echo</pv:name>
-                        <pv:value>8</pv:value>
-                    </pv:subtype>
-                    <pv:subtype>
-                        <pv:name>Router Advertisement</pv:name>
-                        <pv:value>9</pv:value>
-                    </pv:subtype>
-                    <pv:subtype>
-                        <pv:name>Router Solicitation</pv:name>
-                        <pv:value>10</pv:value>
-                    </pv:subtype>
-                    <pv:subtype>
-                        <pv:name>Time Exceeded</pv:name>
-                        <pv:value>11</pv:value>
-                    </pv:subtype>
-                    <pv:subtype>
-                        <pv:name>Parameter Problem</pv:name>
-                        <pv:value>12</pv:value>
-                    </pv:subtype>
-                    <pv:subtype>
-                        <pv:name>Timestamp</pv:name>
-                        <pv:value>13</pv:value>
-                    </pv:subtype>
-                    <pv:subtype>
-                        <pv:name>Timestamp Reply</pv:name>
-                        <pv:value>14</pv:value>
-                    </pv:subtype>
-                </pv:packetinfo>
-            </metadata>
+        <g transform="translate(0, 0)" data-id="type">
             <rect class="field" width="256" height="40"/>
             <svg width="256" height="40">
                 <text x="50%" y="50%" class="fieldText">Type</text>
             </svg>
         </g>
-        <g transform="translate(256, 0)">
-            <metadata>
-                <pv:packetinfo pv:length="8" pv:display_name="Code" pv:internal_name="code">
-                    <pv:subtype>
-                        <pv:name>Net Unreachable</pv:name>
-                        <pv:value>0</pv:value>
-                    </pv:subtype>
-                    <pv:subtype>
-                        <pv:name>Host Unreachable</pv:name>
-                        <pv:value>1</pv:value>
-                    </pv:subtype>
-                    <pv:subtype>
-                        <pv:name>Protocol Unreachable</pv:name>
-                        <pv:value>2</pv:value>
-                    </pv:subtype>
-                    <pv:subtype>
-                        <pv:name>Port Unreachable</pv:name>
-                        <pv:value>3</pv:value>
-                    </pv:subtype>
-                    <pv:subtype>
-                        <pv:name>Fragmentation Needed and Don't Fragment was Set</pv:name>
-                        <pv:value>4</pv:value>
-                    </pv:subtype>
-                    <pv:subtype>
-                        <pv:name>Source Route Failed</pv:name>
-                        <pv:value>5</pv:value>
-                    </pv:subtype>
-                    <pv:subtype>
-                        <pv:name>Destination Network Unknown</pv:name>
-                        <pv:value>6</pv:value>
-                    </pv:subtype>
-                    <pv:subtype>
-                        <pv:name>Destination Host Unknown</pv:name>
-                        <pv:value>7</pv:value>
-                    </pv:subtype>
-                    <pv:subtype>
-                        <pv:name>Source Host Isolated</pv:name>
-                        <pv:value>8</pv:value>
-                    </pv:subtype>
-                    <pv:subtype>
-                        <pv:name>Network Administratively Prohibited</pv:name>
-                        <pv:value>9</pv:value>
-                    </pv:subtype>
-                </pv:packetinfo>
-            </metadata>
+        <g transform="translate(256, 0)" data-id="code">
             <rect class="field" width="256" height="40"/>
             <svg width="256" height="40">
                 <text x="50%" y="50%" class="fieldText">Code</text>
             </svg>
         </g>
-        <g transform="translate(512, 0)">
-            <metadata>
-                <pv:packetinfo pv:length="16" pv:display_name="Checksum" pv:internal_name="checksum"></pv:packetinfo>
-            </metadata>
+        <g transform="translate(512, 0)" data-id="checksum">
             <rect class="field" width="512" height="40"/>
             <svg width="512" height="40">
                 <text x="50%" y="50%" class="fieldText">Checksum</text>
@@ -132,10 +80,7 @@
     </g>
     <!-- Second Row -->
     <g transform="translate(0,40)">
-        <g transform="translate(0, 0)">
-            <metadata>
-                <pv:packetinfo pv:length="0" pv:display_name="... the rest of the header ..." pv:internal_name="rest_of_the_header" pv:encapsulate="true"></pv:packetinfo>
-            </metadata>
+        <g transform="translate(0, 0)" data-id="rest_of_the_header">
             <rect class="field" width="1024" height="40"/>
             <svg width="1024" height="40">
                 <text x="50%" y="50%" class="fieldText">... the rest of the header ...</text>
