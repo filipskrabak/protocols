@@ -62,7 +62,7 @@
     </g>
     
     <!-- 1b = 32px -->
-    <g transform="translate(0,40)">
+    <g transform="translate(0,40)" data-table="true">
         <g transform="translate(0, 0)">
             <g transform="translate(0, 0)" data-id="source_port">
                 <rect class="field" width="512" height="40"/>
