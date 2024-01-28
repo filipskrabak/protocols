@@ -49,52 +49,56 @@
     </style>
     
     <!-- 1b = 32px -->
-    <!-- First Row -->
+
+    <!-- Wrapper -->
     <g transform="translate(0,0)">
-        <g transform="translate(0, 0)" data-id="message_type">
-            <rect class="field" width="256" height="40"/>
-            <svg width="256" height="40">
-                <text x="50%" y="50%" class="fieldText">Message Type</text>
-            </svg>
+        <!-- First Row -->
+        <g transform="translate(0,0)">
+            <g transform="translate(0, 0)" data-id="message_type">
+                <rect class="field" width="256" height="40"/>
+                <svg width="256" height="40">
+                    <text x="50%" y="50%" class="fieldText">Message Type</text>
+                </svg>
+            </g>
+            <g transform="translate(256, 0)" data-id="payload_length">
+                <rect class="field" width="768" height="40"/>
+                <svg width="768" height="40">
+                    <text x="50%" y="50%" class="fieldText">Payload Length</text>
+                </svg>
+            </g>
         </g>
-        <g transform="translate(256, 0)" data-id="payload_length">
-            <rect class="field" width="768" height="40"/>
-            <svg width="768" height="40">
-                <text x="50%" y="50%" class="fieldText">Payload Length</text>
-            </svg>
+        <!-- Second Row -->
+        <g transform="translate(0,40)">
+            <g transform="translate(0, 0)" data-id="timestamp">
+                <rect class="field" width="1024" height="40"/>
+                <svg width="1024" height="40">
+                    <text x="50%" y="50%" class="fieldText">Timestamp</text>
+                </svg>
+            </g>
         </g>
-    </g>
-    <!-- Second Row -->
-    <g transform="translate(0,40)">
-        <g transform="translate(0, 0)" data-id="timestamp">
-            <rect class="field" width="1024" height="40"/>
-            <svg width="1024" height="40">
-                <text x="50%" y="50%" class="fieldText">Timestamp</text>
-            </svg>
+        <!-- Third Row -->
+        <g transform="translate(0,80)">
+            <g transform="translate(0, 0)" data-id="stream_id">
+                <rect class="field" width="768" height="40"/>
+                <svg width="768" height="40">
+                    <text x="50%" y="50%" class="fieldText">Stream ID</text>
+                </svg>
+            </g>
+            <g transform="translate(768, 0)" data-id="data">
+                <rect class="field" width="256" height="40"/>
+                <svg width="256" height="40">
+                    <text x="50%" y="50%" class="fieldText">Data ...</text>
+                </svg>
+            </g>
         </g>
-    </g>
-    <!-- Third Row -->
-    <g transform="translate(0,80)">
-        <g transform="translate(0, 0)" data-id="stream_id">
-            <rect class="field" width="768" height="40"/>
-            <svg width="768" height="40">
-                <text x="50%" y="50%" class="fieldText">Stream ID</text>
-            </svg>
-        </g>
-        <g transform="translate(768, 0)" data-id="data">
-            <rect class="field" width="256" height="40"/>
-            <svg width="256" height="40">
-                <text x="50%" y="50%" class="fieldText">Data ...</text>
-            </svg>
-        </g>
-    </g>
-    <!-- Fourth Row -->
-    <g transform="translate(0,120)">
-        <g transform="translate(0, 0)" data-id="data">
-            <rect class="field" width="1024" height="40"/>
-            <svg width="1024" height="40">
-                <text x="50%" y="50%" class="fieldText">Data ...</text>
-            </svg>
+        <!-- Fourth Row -->
+        <g transform="translate(0,120)">
+            <g transform="translate(0, 0)" data-id="data">
+                <rect class="field" width="1024" height="40"/>
+                <svg width="1024" height="40">
+                    <text x="50%" y="50%" class="fieldText">Data ...</text>
+                </svg>
+            </g>
         </g>
     </g>
 </svg> 

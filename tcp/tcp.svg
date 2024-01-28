@@ -43,103 +43,106 @@
         ]]>
     </style>
     
-    <!-- First Row -->
+    <!-- Wrapper -->
     <g transform="translate(0,0)">
-        <g transform="translate(0, 0)" data-id="src_port">
-            <rect class="field" width="512" height="40"/>
-            <svg width="512" height="40">
-                <text x="50%" y="50%" class="fieldText">Source port</text>
-            </svg>
+        <!-- First Row -->
+        <g transform="translate(0,0)">
+            <g transform="translate(0, 0)" data-id="src_port">
+                <rect class="field" width="512" height="40"/>
+                <svg width="512" height="40">
+                    <text x="50%" y="50%" class="fieldText">Source port</text>
+                </svg>
+            </g>
+            <g transform="translate(512, 0)" data-id="dst_port">
+                <rect class="field" width="512" height="40"/>
+                <svg width="512" height="40">
+                    <text x="50%" y="50%" class="fieldText">Destination port</text>
+                </svg>
+            </g>
         </g>
-        <g transform="translate(512, 0)" data-id="dst_port">
-            <rect class="field" width="512" height="40"/>
-            <svg width="512" height="40">
-                <text x="50%" y="50%" class="fieldText">Destination port</text>
-            </svg>
+        <!-- Second Row -->
+        <g transform="translate(0,40)">
+            <g transform="translate(0, 0)" data-id="seq_num">
+                <rect class="field" width="1024" height="40"/>
+                <svg width="1024" height="40">
+                    <text x="50%" y="50%" class="fieldText">Sequence Number</text>
+                </svg>
+            </g>
         </g>
-    </g>
-    <!-- Second Row -->
-    <g transform="translate(0,40)">
-        <g transform="translate(0, 0)" data-id="seq_num">
-            <rect class="field" width="1024" height="40"/>
-            <svg width="1024" height="40">
-                <text x="50%" y="50%" class="fieldText">Sequence Number</text>
-            </svg>
+        <!-- Third Row -->
+        <g transform="translate(0,80)">
+            <g transform="translate(0, 0)" data-id="ack_num">
+                <rect class="field" width="1024" height="40"/>
+                <svg width="1024" height="40">
+                    <text x="50%" y="50%" class="fieldText">Acknowledgement Number</text>
+                </svg>
+            </g>
         </g>
-    </g>
-    <!-- Third Row -->
-    <g transform="translate(0,80)">
-        <g transform="translate(0, 0)" data-id="ack_num">
-            <rect class="field" width="1024" height="40"/>
-            <svg width="1024" height="40">
-                <text x="50%" y="50%" class="fieldText">Acknowledgement Number</text>
-            </svg>
+        <!-- Fourth Row -->
+        <g transform="translate(0,120)">
+            <g transform="translate(0, 0)" data-id="header_length">
+                <rect class="field" width="128" height="40"/>
+                <svg width="128" height="40">
+                    <text x="50%" y="50%" class="fieldText">Header Length</text>
+                </svg>
+            </g>
+            <g transform="translate(128, 0)" data-id="reserved">
+                <rect class="field" width="96" height="40"/>
+                <svg width="96" height="40">
+                    <text x="50%" y="50%" class="fieldText">Reserved</text>
+                </svg>
+            </g>
+            <g transform="translate(224, 0)" data-id="control_flags">
+                <rect class="field" width="288" height="40"/>
+                <svg width="288" height="40">
+                    <text x="50%" y="50%" class="fieldText">Control Flags</text>
+                </svg>
+            </g>
+            <g transform="translate(512, 0)" data-id="window_size">
+                <rect class="field" width="512" height="40"/>
+                <svg width="512" height="40">
+                    <text x="50%" y="50%" class="fieldText">Window Size</text>
+                </svg>
+            </g>
         </g>
-    </g>
-    <!-- Fourth Row -->
-    <g transform="translate(0,120)">
-        <g transform="translate(0, 0)" data-id="header_length">
-            <rect class="field" width="128" height="40"/>
-            <svg width="128" height="40">
-                <text x="50%" y="50%" class="fieldText">Header Length</text>
-            </svg>
-        </g>
-        <g transform="translate(128, 0)" data-id="reserved">
-            <rect class="field" width="96" height="40"/>
-            <svg width="96" height="40">
-                <text x="50%" y="50%" class="fieldText">Reserved</text>
-            </svg>
-        </g>
-        <g transform="translate(224, 0)" data-id="control_flags">
-            <rect class="field" width="288" height="40"/>
-            <svg width="288" height="40">
-                <text x="50%" y="50%" class="fieldText">Control Flags</text>
-            </svg>
-        </g>
-        <g transform="translate(512, 0)" data-id="window_size">
-            <rect class="field" width="512" height="40"/>
-            <svg width="512" height="40">
-                <text x="50%" y="50%" class="fieldText">Window Size</text>
-            </svg>
-        </g>
-    </g>
-    <!-- Fifth Row -->
-    <g transform="translate(0,160)">
-        <g transform="translate(0, 0)" data-id="checksum">
-            <rect class="field" width="512" height="40"/>
-            <svg width="512" height="40">
-                <text x="50%" y="50%" class="fieldText">Checksum</text>
-            </svg>
-        </g>
-        <g transform="translate(512, 0)" data-id="urgent_pointer">
-            <rect class="field" width="512" height="40"/>
-            <svg width="512" height="40">
-                <text x="50%" y="50%" class="fieldText">Urgent Pointer</text>
-            </svg>
-        </g>
-    </g> 
-    <!-- Sixth Row -->
-    <g transform="translate(0,200)">
-        <g transform="translate(0, 0)" data-id="options">
-            <rect class="field" width="768" height="40"/>
-            <svg width="768" height="40">
-                <text x="50%" y="50%" class="fieldText">Options ...</text>
-            </svg>
-        </g>
-        <g transform="translate(768, 0)" data-id="padding">
-            <rect class="field" width="256" height="40"/>
-            <svg width="256" height="40">
-                <text x="50%" y="50%" class="fieldText">Padding ...</text>
-            </svg>
-        </g>
-    </g>   
-    <!-- Seventh Row -->
-    <g transform="translate(0,240)">
-        <g transform="translate(0, 0)" data-id="data">
-            <rect class="field" width="1024" height="40"/>
-            <svg width="1024" height="40">
-                <text x="50%" y="50%" class="fieldText">Data ...</text>
-            </svg>
+        <!-- Fifth Row -->
+        <g transform="translate(0,160)">
+            <g transform="translate(0, 0)" data-id="checksum">
+                <rect class="field" width="512" height="40"/>
+                <svg width="512" height="40">
+                    <text x="50%" y="50%" class="fieldText">Checksum</text>
+                </svg>
+            </g>
+            <g transform="translate(512, 0)" data-id="urgent_pointer">
+                <rect class="field" width="512" height="40"/>
+                <svg width="512" height="40">
+                    <text x="50%" y="50%" class="fieldText">Urgent Pointer</text>
+                </svg>
+            </g>
+        </g> 
+        <!-- Sixth Row -->
+        <g transform="translate(0,200)">
+            <g transform="translate(0, 0)" data-id="options">
+                <rect class="field" width="768" height="40"/>
+                <svg width="768" height="40">
+                    <text x="50%" y="50%" class="fieldText">Options ...</text>
+                </svg>
+            </g>
+            <g transform="translate(768, 0)" data-id="padding">
+                <rect class="field" width="256" height="40"/>
+                <svg width="256" height="40">
+                    <text x="50%" y="50%" class="fieldText">Padding ...</text>
+                </svg>
+            </g>
+        </g>   
+        <!-- Seventh Row -->
+        <g transform="translate(0,240)">
+            <g transform="translate(0, 0)" data-id="data">
+                <rect class="field" width="1024" height="40"/>
+                <svg width="1024" height="40">
+                    <text x="50%" y="50%" class="fieldText">Data ...</text>
+                </svg>
+            </g>
         </g>
     </g>
 </svg> 

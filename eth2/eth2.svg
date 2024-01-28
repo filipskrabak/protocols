@@ -39,7 +39,6 @@
         ]]>
     </style>
     
-    <!-- First Row -->
     <!-- 1b = 8px -->
     <g transform="translate(0,0)">
         <g transform="translate(0, 0)" data-id="dst_mac">

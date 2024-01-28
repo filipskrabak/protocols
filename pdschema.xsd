@@ -13,16 +13,17 @@
 <xs:element name="created" type="xs:string"/>
 
 <!-- Attributes -->
-<xs:attribute name="name" type="xs:string"/>
-<xs:attribute name="value" type="xs:string"/>
 <xs:attribute name="length" type="xs:integer"/>
 <xs:attribute name="length_max" type="xs:integer"/>
-<xs:attribute name="endian" type="xs:string" default="big" />
 <xs:attribute name="display_name" type="xs:string"/>
 <xs:attribute name="id" type="xs:string"/>
 <xs:attribute name="description" type="xs:string"/>
-<xs:attribute name="selected" type="xs:boolean"/>   
 <xs:attribute name="encapsulate" type="xs:boolean"/>
+<xs:attribute name="endian" type="xs:string" default="big" />
+
+<xs:attribute name="name" type="xs:string"/>
+<xs:attribute name="value" type="xs:string"/>
+<xs:attribute name="selected" type="xs:boolean"/>
 
 <!-- Complex elements -->
 

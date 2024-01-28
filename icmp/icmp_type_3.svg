@@ -54,43 +54,47 @@
     </style>
     
     <!-- 1b = 32px -->
-    <!-- First Row -->
+
+    <!-- Wrapper -->
     <g transform="translate(0,0)">
-        <g transform="translate(0, 0)" data-id="type">
-            <rect class="field" width="256" height="40"/>
-            <svg width="256" height="40">
-                <text x="50%" y="50%" class="fieldText">Type</text>
-            </svg>
+        <!-- First Row -->
+        <g transform="translate(0,0)">
+            <g transform="translate(0, 0)" data-id="type">
+                <rect class="field" width="256" height="40"/>
+                <svg width="256" height="40">
+                    <text x="50%" y="50%" class="fieldText">Type</text>
+                </svg>
+            </g>
+            <g transform="translate(256, 0)" data-id="code">
+                <rect class="field" width="256" height="40"/>
+                <svg width="256" height="40">
+                    <text x="50%" y="50%" class="fieldText">Code</text>
+                </svg>
+            </g>
+            <g transform="translate(512, 0)" data-id="checksum">
+                <rect class="field" width="512" height="40"/>
+                <svg width="512" height="40">
+                    <text x="50%" y="50%" class="fieldText">Checksum</text>
+                </svg>
+            </g>
         </g>
-        <g transform="translate(256, 0)" data-id="code">
-            <rect class="field" width="256" height="40"/>
-            <svg width="256" height="40">
-                <text x="50%" y="50%" class="fieldText">Code</text>
-            </svg>
+        <!-- Second Row -->
+        <g transform="translate(0,40)">
+            <g transform="translate(0, 0)" data-id="unused">
+                <rect class="field" width="1024" height="40"/>
+                <svg width="1024" height="40">
+                    <text x="50%" y="50%" class="fieldText">unused</text>
+                </svg>
+            </g>
         </g>
-        <g transform="translate(512, 0)" data-id="checksum">
-            <rect class="field" width="512" height="40"/>
-            <svg width="512" height="40">
-                <text x="50%" y="50%" class="fieldText">Checksum</text>
-            </svg>
-        </g>
-    </g>
-    <!-- Second Row -->
-    <g transform="translate(0,40)">
-        <g transform="translate(0, 0)" data-id="unused">
-            <rect class="field" width="1024" height="40"/>
-            <svg width="1024" height="40">
-                <text x="50%" y="50%" class="fieldText">unused</text>
-            </svg>
-        </g>
-    </g>
-    <!-- Third Row -->
-    <g transform="translate(0,80)">
-        <g transform="translate(0, 0)" data-id="ih_data">
-            <rect class="field" width="1024" height="40"/>
-            <svg width="1024" height="40">
-                <text x="50%" y="50%" class="fieldText">Internet Header + 64 bits of Data Datagram ...</text>
-            </svg>
+        <!-- Third Row -->
+        <g transform="translate(0,80)">
+            <g transform="translate(0, 0)" data-id="ih_data">
+                <rect class="field" width="1024" height="40"/>
+                <svg width="1024" height="40">
+                    <text x="50%" y="50%" class="fieldText">Internet Header + 64 bits of Data Datagram ...</text>
+                </svg>
+            </g>
         </g>
     </g>
 </svg> 

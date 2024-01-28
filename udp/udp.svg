@@ -36,9 +36,7 @@
     </style>
     
     <!-- 1b = 32px -->
-    <!-- First Row -->
     <g transform="translate(0,0)">
-        <!-- UDP -->
         <g transform="translate(0, 0)">
             <g transform="translate(0, 0)" data-id="source_port">
                 <rect class="field" width="512" height="40"/>
