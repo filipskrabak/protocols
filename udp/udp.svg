@@ -35,9 +35,9 @@
         ]]>
     </style>
 
+    <!-- Shows the bits per row (scale) -->
     <g transform="translate(0,0)" data-scale="true">
         <svg width="1024" height="40">
-            <!-- Add an arrowhead marker -->
               <defs>
                 <!-- A marker to be used as an arrowhead -->
                 <marker
@@ -61,7 +61,7 @@
         </svg>
     </g>
     
-    <!-- 1b = 32px -->
+    <!-- Protocol Header -->
     <g transform="translate(0,40)" data-table="true">
         <g transform="translate(0, 0)">
             <g transform="translate(0, 0)" data-id="source_port">
