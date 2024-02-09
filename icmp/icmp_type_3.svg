@@ -53,10 +53,14 @@
         ]]>
     </style>
     
+    <!-- Shows the bits per row (scale) -->
+    <g transform="translate(0,0)" data-scale="true">
+    </g>
+
     <!-- 1b = 32px -->
 
     <!-- Wrapper -->
-    <g transform="translate(0,0)">
+    <g transform="translate(0,0)" data-table="true">
         <!-- First Row -->
         <g transform="translate(0,0)">
             <g transform="translate(0, 0)" data-id="type">

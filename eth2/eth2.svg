@@ -38,9 +38,14 @@
             }
         ]]>
     </style>
+
+    <!-- Shows the bits per row (scale) -->
+    <g transform="translate(0,0)" data-scale="true">
+    </g>
+    
     
     <!-- 1b = 8px -->
-    <g transform="translate(0,0)">
+    <g transform="translate(0,0)" data-table="true">
         <g transform="translate(0, 0)" data-id="dst_mac">
             <rect class="field" width="384" height="40"/>
             <svg width="384" height="40">
