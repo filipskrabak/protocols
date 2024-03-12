@@ -2,6 +2,7 @@
     <!-- Protocol Description -->
     <metadata>
         <pd:info>
+            <pd:id>fb2ab6e0-bea0-4036-aaad-7225aad842f2</pd:id>
             <pd:name>RTMP</pd:name>
             <pd:author>Filip Škrabák</pd:author>
             <pd:description>RTMP streaming protocol</pd:description>

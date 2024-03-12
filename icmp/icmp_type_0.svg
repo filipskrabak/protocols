@@ -2,6 +2,7 @@
     <!-- Protocol Description -->
     <metadata>
         <pd:info>
+            <pd:id>79949196-9b1a-433f-92cd-701eba2911da</pd:id>
             <pd:name>ICMP Type 0 Header</pd:name>
             <pd:author>Filip Škrabák</pd:author>
             <pd:description>ICMP protocol (Type 0)</pd:description>

@@ -2,6 +2,7 @@
     <!-- Protocol Description -->
     <metadata>
         <pd:info>
+            <pd:id>00d7cefb-705e-4f2f-934a-fdff42b8b711</pd:id>
             <pd:name>TCP</pd:name>
             <pd:author>Filip Škrabák</pd:author>
             <pd:description>TCP protocol</pd:description>

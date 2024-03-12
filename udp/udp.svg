@@ -2,6 +2,7 @@
     <!-- Protocol Description -->
     <metadata>
         <pd:info>
+            <pd:id>13b7ff01-8396-477c-b61b-c1bc3ff5ecd9</pd:id>
             <pd:name>UDP</pd:name>
             <pd:author>Filip Škrabák</pd:author>
             <pd:description>UDP protocol</pd:description>

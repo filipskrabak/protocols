@@ -2,6 +2,7 @@
     <!-- Protocol Description -->
     <metadata>
         <pd:info>
+            <pd:id>f65c02b1-ff8d-47b5-b77a-ba70cd895611</pd:id>
             <pd:name>ICMP Basic Header</pd:name>
             <pd:author>Filip Škrabák</pd:author>
             <pd:description>ICMP protocol</pd:description>

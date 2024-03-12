@@ -2,6 +2,7 @@
     <!-- Protocol Description -->
     <metadata>
         <pd:info>
+            <pd:id>8820af1c-02c3-4f97-9ae4-30a60e81f925</pd:id>
             <pd:name>ICMP Type 11 Header</pd:name>
             <pd:author>Filip Škrabák</pd:author>
             <pd:description>ICMP protocol (Type 11)</pd:description>

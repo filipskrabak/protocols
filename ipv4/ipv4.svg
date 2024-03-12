@@ -2,6 +2,7 @@
     <!-- Protocol Description -->
     <metadata>
         <pd:info>
+            <pd:id>005b6f96-a053-4a3c-80b0-291e3f48dcb0</pd:id>
             <pd:name>IPv4</pd:name>
             <pd:author>Filip Škrabák</pd:author>
             <pd:description>IPv4 protocol</pd:description>

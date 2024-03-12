@@ -2,6 +2,7 @@
     <!-- Protocol Description -->
     <metadata>
         <pd:info>
+            <pd:id>61f6046a-c1ac-4429-8713-8639f452ef3e</pd:id>
             <pd:name>Ethernet II</pd:name>
             <pd:author>Filip Škrabák</pd:author>
             <pd:description>Ethernet II protocol</pd:description>

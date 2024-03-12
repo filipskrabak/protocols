@@ -2,6 +2,7 @@
     <!-- Protocol Description -->
     <metadata>
         <pd:info>
+            <pd:id>88b3486f-bdd9-4449-aa2c-c3e8ccf046ef</pd:id>
             <pd:name>ICMP Type 3 Header</pd:name>
             <pd:author>Filip Škrabák</pd:author>
             <pd:description>ICMP protocol (Type 3)</pd:description>

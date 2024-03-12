@@ -5,6 +5,7 @@
            elementFormDefault="qualified">
 
 <!-- Simple elements -->
+<xs:element name="id" type="xs:string"/>
 <xs:element name="name" type="xs:string"/>
 <xs:element name="author" type="xs:string"/>
 <xs:element name="description" type="xs:string"/>
@@ -53,7 +54,8 @@
 <xs:element name="info">
   <xs:complexType>
     <xs:sequence>
-      <xs:element ref="tns:name"></xs:element>
+      <xs:element ref="tns:id"/>
+      <xs:element ref="tns:name"/>
       <xs:element ref="tns:author"/>
       <xs:element ref="tns:description"/>
       <xs:element ref="tns:version"/>
